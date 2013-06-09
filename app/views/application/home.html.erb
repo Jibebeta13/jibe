@@ -1,0 +1,32 @@
+<% if notice != nil %>
+	<p id="notice"><%= notice %></p>
+	<br /><br />
+<% end %>
+
+<a id="logo" href="<%= root_path %>">
+	<img src="<%= asset_path('logo.png') %>" />
+</a>
+
+<br />
+<br />
+
+<p><strong>Submit your email to be a part of the JIBE Beta.</strong></p>
+<p>
+	Are you a you a 
+	<a href="<%= new_dev_email_path %>">developer</a> 
+	or do you 
+	<a href="<%= new_project_email_path %>">have a project</a>
+	?
+</p>
+
+<br />
+<br />
+
+<div id="buttons-wrap">
+	<a href="<%= new_dev_email_path %>" style="padding-right: 25px;text-decoration: none;">
+		<img src="<%= asset_path('dev.png') %>" />
+	</a>
+	<a href="<%= new_project_email_path %>">
+		<img src="<%= asset_path('project.png') %>" />
+	</a>
+</div>
