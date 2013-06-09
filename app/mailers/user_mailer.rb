@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def notify_email(email)
   	@email = email
-  	if @email.type == 1
+  	if @email.kind == 1
   		mail(:to => "Jibebeta13@gmail.com", :subject => "Developer Email")
   	else
   		mail(:to => "Jibebeta13@gmail.com", :subject => "Project Email")

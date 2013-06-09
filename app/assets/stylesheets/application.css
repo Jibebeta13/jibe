@@ -24,3 +24,23 @@ a{
 	color: #575757;
 	font-size: 14pt;
 }
+
+#emails-list{
+	clear: left;
+	list-style: none;
+	float: left;
+	margin-left: 0;
+}
+
+#emails-list li{
+	float: left;
+	clear: left;
+	width: 400px;
+	text-align: left;
+	border-bottom: 1px solid #dedede;
+	padding-bottom: 8px;
+}
+
+#emails-list li span.right{
+	float: right;
+}

@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20130609020233) do
 
   create_table "emails", :force => true do |t|
     t.string   "address"
-    t.integer  "type"
+    t.integer  "kind"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

@@ -1,11 +1,11 @@
 class EmailsController < ApplicationController
 
   def new_dev_email
-    @email = Email.new(:type => 1)
+    @email = Email.new(:kind => 1)
   end
 
   def new_project_email
-    @email = Email.new(:type => 2)
+    @email = Email.new(:kind => 2)
   end
 
   def create

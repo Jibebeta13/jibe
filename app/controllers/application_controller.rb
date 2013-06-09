@@ -17,6 +17,7 @@ class ApplicationController < ActionController::Base
   end
 
   def admin
+  	@emails = Email.all
   end
 
 end

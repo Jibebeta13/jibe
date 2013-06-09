@@ -10,6 +10,7 @@ Jibe::Application.routes.draw do
   match 'login' => 'application#login', :as => :login
   match 'admin' => 'application#admin', :as => :admin
   match 'admin_validate' => 'application#validate', :as => :admin_validate
+  
   post "application/validate"
 
 end

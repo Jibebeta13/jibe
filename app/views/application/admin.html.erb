@@ -1,0 +1,16 @@
+<h1 style="float: left;margin-left: 40px;">Submitted Emails: </h1>
+
+<ul id="emails-list">
+	<% @emails.each do |email| %>
+		<li>
+			<%= email.address %>
+			<span class="right">
+				<% if email.kind == 1 %>
+					Developer
+				<% else %>
+					Project
+				<% end %>
+			</span>
+		</li>
+	<% end %>
+</ul>
