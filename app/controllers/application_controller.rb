@@ -7,6 +7,15 @@ class ApplicationController < ActionController::Base
   def login
   end
 
+  def validate
+    if params[:password] == "Easywin2006"
+      session[:admin] = "OK"
+      redirect_to admin_path
+    else
+      render :action => "login"
+    end
+  end
+
   def admin
   end
 
