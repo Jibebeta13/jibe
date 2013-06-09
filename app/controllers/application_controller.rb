@@ -19,5 +19,4 @@ class ApplicationController < ActionController::Base
   def admin
   	@emails = Email.all
   end
-
 end
